@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Ambasador</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+
+a:link { text-decoration: none;
+color:black;}
+a:visited { text-decoration: none;
+color:black; }
+a:hover { text-decoration: none;
+color:black; }
+a:active { text-decoration: none;
+color:black;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5F675D;
+}
+
+li {
+  display: inline;
+}
+</style>
+</head>
+<body style="background-color:#802221;">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+  <div class="container">
+<ul class=head>
+  <li><a href="https://bradholman.github.io/visit/visit.html">VISIT
+  <li><a href="https://bradholman.github.io/take/take.html">TAKEn'BAKE</a></li>
+  <li><a href="https://bradholman.github.io/nova/main.html"><img class="logo" src="images\ambassador_logo.png" alt=Ambassador></a></li>
+  <li><a href="https://bradholman.github.io/menu/menu.html">MENU</a></li>
+  <li><a href="https://bradholman.github.io/ice/history.html">HISTORY</a></li>
+</ul>
+
+
+<img class="map"src="images\take.jpg">
+<h1 class="visit">TAKE n' BAKE</h1>
+
+<div class="bake">
+  <p>PIZZA TO GO</p>
+  <p>Now, you can have our great pizza right from your own oven!</p>
+  <p>Option 1: order your pizza Half-Baked (to take home and finish later)</p>
+  <p>~ or ~</p>
+  <p>Option 2: place your order for a Half-Baked-Frozen pizza to take home where you can keep it in your freezer
+(Half-Baked-Frozen requires advanced notice, call 482-5054)
+<p>COOKING INSTRUCTIONS:</p>
+
+
+    <p>1. Thaw pizza (if frozen)</p>
+    <p>2. Preheat oven to 375</p>
+    <p>3. Place pizza directly on the oven rack</p>
+    <p>4. Cook 10 to 25 minutes, until center is fully cooked</p>
+
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
